@@ -7,6 +7,12 @@
 /// @since 1.0.0
 ////
 
+/// Background color for the entire page.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-background-color: #dcdcdc;
+
 /// Color for dangerous actions, such as permanently deleting an item, blocking
 /// someone, etc.
 ///
@@ -54,11 +60,11 @@ $ss-primary-color: #0095e8;
 ///
 /// @type Color
 /// @since 1.0.0
-$ss-success-color: #ffffff;
+$ss-success-color: #35af35;
 
 /// Color for actions that have possible negative effects, but aren't
 /// especially severe, such as "ignoring" someone, or delaying an email.
 ///
 /// @type Color
 /// @since 1.0.0
-$ss-warning-color: #ffffff;
+$ss-warning-color: #ff9900;
