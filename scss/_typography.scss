@@ -6,13 +6,6 @@ html, p {
   font-family: $ss-body-font-family;
 }
 
-@mixin responsive-prop($property, $defined-properties) {
-  @each $breakpoint, $min-max in $ss-breakpoints {
-    @media (min-width: nth($min-max, 1)) and (max-width: nth($min-max, 2)) {
-      #{$property}: map-get($defined-properties, $breakpoint);
-    }
-  }
-}
 
 h1 {
   @include responsive-prop('font-size', $ss-h1-font-sizes);

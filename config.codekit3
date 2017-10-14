@@ -25,6 +25,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/reset.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/reset-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/starsystem.css": {
 		"aP": 1,
 		"bl": 0,
@@ -34,6 +44,12 @@
 		"oAP": "\/css\/starsystem-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/design": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/design",
+		"oF": 0
 		},
 	"\/index.haml": {
 		"cDA": 0,
@@ -106,6 +122,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_typography.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/_utilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_utilities.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
