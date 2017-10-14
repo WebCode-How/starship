@@ -6,3 +6,183 @@
 /// @author Dean Papastrat
 /// @since 1.0.0
 ////
+
+/// Fonts for headings, titles, and significant components.
+///
+/// @type Font Family
+/// @since 1.0.0
+$ss-heading-font-family: 'Work Sans', sans-serif;
+
+/// Amount of spacing between letters in headings.
+///
+/// @type Pixels
+/// @since 1.0.0
+$ss-heading-letter-spacing: 5px;
+
+/// Font sizes for H1 elements in a map.
+///
+/// @prop { Pixels } desktop-lg [60px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [55px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [48px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [35px] - Size for tablets > 600px
+/// @prop { Pixels } phone [28px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-h1-font-sizes: (
+  desktop-lg: 60px,
+  desktop-sm: 55px,
+  tablet-hr: 48px,
+  tablet-vt: 35px,
+  phone: 28px
+);
+
+/// Margin sizes for H1 elements in a map.
+///
+/// @prop { Pixels } desktop-lg [20px 0 7.5px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [18px 0 6px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [16px 0 5.5px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [11.5px 0 5px] - Size for tablets > 600px
+/// @prop { Pixels } phone [8px 0 4px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-h1-margin-sizes: (
+  desktop-lg: 40px 0 12.5px,
+  desktop-sm: 32px 0 10px,
+  tablet-hr: 20px 0 8px,
+  tablet-vt: 15px 0 6px,
+  phone: 12.5px 0 5px
+);
+
+/// Amount of spacing between letters in H1 elements.
+///
+/// @type Pixels
+/// @since 1.0.0
+$ss-h1-letter-spacing: $ss-heading-letter-spacing;
+
+/// Font sizes for H2 elements in a map.
+///
+/// @prop { Pixels } desktop-lg [60px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [55px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [48px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [35px] - Size for tablets > 600px
+/// @prop { Pixels } phone [28px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-h2-font-sizes: (
+  desktop-lg: 54px,
+  desktop-sm: 50px,
+  tablet-hr: 34px,
+  tablet-vt: 28px,
+  phone: 22px
+);
+
+/// Margin sizes for H2 elements in a map.
+///
+/// @prop { Pixels } desktop-lg [20px 0 7.5px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [18px 0 6px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [16px 0 5.5px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [11.5px 0 5px] - Size for tablets > 600px
+/// @prop { Pixels } phone [8px 0 4px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-h2-margin-sizes: (
+  desktop-lg: 30px 0 12.5px,
+  desktop-sm: 25px 0 9px,
+  tablet-hr: 20px 0 7px,
+  tablet-vt: 17.5px 0 5px,
+  phone: 12.5px 0 4.5px
+);
+
+/// Amount of spacing between letters in H2 elements.
+///
+/// @type Pixels
+/// @since 1.0.0
+$ss-h2-letter-spacing: $ss-heading-letter-spacing;
+
+/// Font sizes for H3 elements in a map.
+///
+/// @prop { Pixels } desktop-lg [60px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [55px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [48px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [35px] - Size for tablets > 600px
+/// @prop { Pixels } phone [28px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-h3-font-sizes: (
+  desktop-lg: 36px,
+  desktop-sm: 32px,
+  tablet-hr: 28px,
+  tablet-vt: 22px,
+  phone: 18px
+);
+
+/// Margin sizes for H3 elements in a map.
+///
+/// @prop { Pixels } desktop-lg [15px 0 7.5px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [12.5px 0 6px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [10px 0 5px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [9px 0 4.5px] - Size for tablets > 600px
+/// @prop { Pixels } phone [8px 0 4px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-h3-margin-sizes: (
+  desktop-lg: 28px 0 7.5px,
+  desktop-sm: 22px 0 6px,
+  tablet-hr: 17.5px 0 5px,
+  tablet-vt: 15px 0 4.5px,
+  phone: 12.5px 0 4px
+);
+
+/// Amount of spacing between letters in H3 elements.
+///
+/// @type Pixels
+/// @since 1.0.0
+$ss-h3-letter-spacing: $ss-heading-letter-spacing;
+
+/// Fonts for generic text on a page.
+///
+/// @type Font Family
+/// @since 1.0.0
+$ss-body-font-family: 'Open Sans', sans-serif;
+
+/// Font sizes for P elements in a map.
+///
+/// @prop { Pixels } desktop-lg [16px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [16px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [14px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [12px] - Size for tablets > 600px
+/// @prop { Pixels } phone [12px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-paragraph-font-sizes: (
+  desktop-lg: 16px,
+  desktop-sm: 16px,
+  tablet-hr: 14px,
+  tablet-vt: 12px,
+  phone: 12px
+);
+
+/// Margin sizes for P elements in a map.
+///
+/// @prop { Pixels } desktop-lg [15px 0 7.5px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [12.5px 0 6px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [10px 0 5px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [9px 0 4.5px] - Size for tablets > 600px
+/// @prop { Pixels } phone [8px 0 4px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-paragraph-margin-sizes: (
+  desktop-lg: 15px 0,
+  desktop-sm: 12.5px 0,
+  tablet-hr: 10px 0,
+  tablet-vt: 10px 0,
+  phone: 10px 0
+);
