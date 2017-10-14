@@ -7,6 +7,19 @@
 /// @since 1.0.0
 ////
 
+/// The points at which the page's elements change their size significantly in
+/// Starsystem. Used for responsiveness.
+///
+/// @access private
+/// @type Map
+/// @since 1.0.0
+$ss-breakpoints: (
+  desktop-lg: (1801px, 8000px),
+  desktop-sm: (1201px, 1800px),
+  tablet-hr:  (901px, 1200px),
+  tablet-vt:  (601px, 900px),
+  phone:      (0px, 600px)
+);
 
 // Import master variable files; these two files should not rely on each other
 // for population.

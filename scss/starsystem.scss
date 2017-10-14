@@ -1,6 +1,5 @@
 ////
-/// Master files for importing all sub-stylesheets into one main CSS file for
-/// distribution.
+/// Compiled file for distribution of framework.
 ///
 /// @group Core
 /// @author Dean Papastrat
@@ -8,3 +7,4 @@
 ////
 
 @import 'variables';
+@import 'starsystem-no-var';
