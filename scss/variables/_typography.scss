@@ -186,3 +186,10 @@ $ss-paragraph-margin-sizes: (
   tablet-vt: 10px 0,
   phone: 10px 0
 );
+
+
+/// List of possible alignments for a text element.
+///
+/// @type List
+/// @since 1.0.0
+$ss-text-alignments: center, left, right;

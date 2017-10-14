@@ -68,3 +68,18 @@ $ss-success-color: #35af35;
 /// @type Color
 /// @since 1.0.0
 $ss-warning-color: #ff9900;
+
+/// Map of colors in the Starsystem color palette.
+///
+/// @type Map
+/// @since 1.0.0
+$ss-color-map: (
+  danger:  $ss-danger-color,
+  dark:    $ss-dark-color,
+  default: $ss-default-color,
+  info:    $ss-info-color,
+  light:   $ss-light-color,
+  primary: $ss-primary-color,
+  success: $ss-success-color,
+  warning: $ss-warning-color
+);
