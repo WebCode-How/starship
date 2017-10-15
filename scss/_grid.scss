@@ -1,0 +1,13 @@
+.container {
+  @include responsive-prop('padding', $ss-container-paddings);
+
+  margin: 0 auto;
+}
+
+.container-static {
+  @include responsive-prop('max-width', $ss-static-container-max-widths);
+}
+
+.container-fluid {
+  max-width: 100%;
+}

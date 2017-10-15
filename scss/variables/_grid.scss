@@ -6,3 +6,40 @@
 /// @author Dean Papastrat
 /// @since 1.0.0
 ////
+
+/// Padding sizes for the container.
+///
+/// @prop { Pixels } desktop-lg [50px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [45px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [25px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [20px] - Size for tablets > 600px
+/// @prop { Pixels } phone [15px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-container-paddings: (
+  desktop-lg: 50px,
+  desktop-sm: 40px,
+  tablet-hr: 25px,
+  tablet-vt: 20px,
+  phone: 15px
+);
+
+/// Max widths for statically sized containers. (fluid containers are full
+/// width)
+///
+/// @prop { Pixels } desktop-lg [1250px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [950px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [750px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [650px] - Size for tablets > 600px
+/// @prop { Pixels } phone [500px] - Size for phones <= 600px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-static-container-max-widths: (
+  desktop-lg: 1250px,
+  desktop-sm: 950px,
+  tablet-hr: 750px,
+  tablet-vt: 650px,
+  phone: 500px
+);
