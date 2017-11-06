@@ -18,7 +18,8 @@ $ss-breakpoints: (
   desktop-sm: (1201px, 1800px),
   tablet-hr:  (901px, 1200px),
   tablet-vt:  (601px, 900px),
-  phone:      (0px, 600px)
+  phone-lg:   (481px, 600px),
+  phone-sm:   (0px, 480px),
 );
 
 // Import master variable files; these two files should not rely on each other
