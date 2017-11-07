@@ -1,0 +1,52 @@
+////
+/// Master file responsible for importing all of Starship's variable files
+/// into the project.
+///
+/// @group Variables
+/// @author Dean Papastrat
+/// @since 1.0.0
+////
+
+/// The points at which the page's elements change their size significantly in
+/// Starship. Used for responsiveness.
+///
+/// @access private
+/// @type Map
+/// @since 1.0.0
+$ss-breakpoints: (
+  desktop-lg: (1801px, 8000px),
+  desktop-sm: (1201px, 1800px),
+  tablet-hr:  (901px, 1200px),
+  tablet-vt:  (601px, 900px),
+  phone-lg:   (481px, 600px),
+  phone-sm:   (0px, 480px),
+);
+
+/// The abbreviations for Starship's breakpoints.
+///
+/// @access private
+/// @type Map
+/// @since 1.0.0
+$ss-breakpoint-abbreviations: (
+  desktop-lg: 'xl',
+  desktop-sm: 'lg',
+  tablet-hr:  'md',
+  tablet-vt:  'sm',
+  phone-lg:   'xs',
+  phone-sm:   'xx',
+);
+
+
+// Import master variable files; these two files should not rely on each other
+// for population.
+@import 'variables/animation';
+@import 'variables/colors';
+@import 'variables/grid';
+@import 'variables/typography';
+
+// Import component variable files; these files should rely on the master
+// variable files, but not each other.
+@import 'variables/buttons';
+@import 'variables/cards';
+@import 'variables/dialogs';
+@import 'variables/forms';

@@ -1,0 +1,66 @@
+h1, h2, h3 {
+  font-family: $ss-heading-font-family;
+}
+
+html, p {
+  font-family: $ss-body-font-family;
+}
+
+// Basic Text Styles
+
+h1 {
+  @include responsive-prop('font-size', $ss-h1-font-sizes);
+  @include responsive-prop('line-height', $ss-h1-font-sizes);
+  @include responsive-prop('margin', $ss-h1-margin-sizes);
+
+  font-weight: 600;
+  letter-spacing: $ss-h1-letter-spacing;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include responsive-prop('font-size', $ss-h2-font-sizes);
+  @include responsive-prop('line-height', $ss-h2-font-sizes);
+  @include responsive-prop('margin', $ss-h2-margin-sizes);
+
+  font-weight: 400;
+  letter-spacing: $ss-h2-letter-spacing;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include responsive-prop('font-size', $ss-h3-font-sizes);
+  @include responsive-prop('line-height', $ss-h3-font-sizes);
+  @include responsive-prop('margin', $ss-h3-margin-sizes);
+
+  font-weight: 400;
+  letter-spacing: $ss-h3-letter-spacing;
+  text-transform: uppercase;
+}
+
+html, p {
+  @include responsive-prop('font-size', $ss-paragraph-font-sizes);
+  @include responsive-prop('line-height', $ss-paragraph-font-sizes);
+}
+
+p {
+  @include responsive-prop('margin', $ss-paragraph-margin-sizes);
+
+  font-weight: 400;
+}
+
+// Text Color Utility
+
+@each $color-name, $color in $ss-color-map {
+  .text-#{$color-name} {
+    color: $color;
+  }
+}
+
+// Text Alignment Utility
+
+@each $alignment in $ss-text-alignments {
+  .text-#{$alignment} {
+    text-align: $alignment;
+  }
+}

@@ -1,0 +1,8 @@
+@mixin responsive-prop($property, $defined-properties) {
+  @each $breakpoint, $min-max in $ss-breakpoints {
+    @media (min-width: nth($min-max, 1)) and (max-width: nth($min-max, 2)) {
+      #{$property}: map-get($defined-properties, $breakpoint);
+    }
+  }
+}
+

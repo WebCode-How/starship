@@ -1,0 +1,85 @@
+////
+/// Collection of variables you can adjust to change the look and feel of the
+/// Starship Framework's colors.
+///
+/// @group Colors
+/// @author Dean Papastrat
+/// @since 1.0.0
+////
+
+/// Background color for the entire page.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-background-color: #dcdcdc;
+
+/// Color for dangerous actions, such as permanently deleting an item, blocking
+/// someone, etc.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-danger-color: #cc0000;
+
+/// Base color for dark-colored components.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-dark-color: #333333;
+
+/// Base color for components.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-default-color: #d8d8d8;
+
+/// Base color for light-colored components.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-light-color: #ffffff;
+
+/// Color for actions that dig deeper into existing content and/or navigate
+/// to relevant pages. Color should NOT be used on any item that modifies data
+/// or causes a significant non-navigational action.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-info-color: #00ccff;
+
+/// Primary color for the brand that the site represents. Should be used in
+/// primary components,  significant actions, and other important areas at the
+/// brand's discretion.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-primary-color: #0095e8;
+
+/// Color for components that create, update, save, resolve, and other positive
+/// actions. Should NOT be used for primary navigation, negative actions, or
+/// netural actions.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-success-color: #35af35;
+
+/// Color for actions that have possible negative effects, but aren't
+/// especially severe, such as "ignoring" someone, or delaying an email.
+///
+/// @type Color
+/// @since 1.0.0
+$ss-warning-color: #ff9900;
+
+/// Map of colors in the Starsystem color palette.
+///
+/// @type Map
+/// @since 1.0.0
+$ss-color-map: (
+  danger:  $ss-danger-color,
+  dark:    $ss-dark-color,
+  default: $ss-default-color,
+  info:    $ss-info-color,
+  light:   $ss-light-color,
+  primary: $ss-primary-color,
+  success: $ss-success-color,
+  warning: $ss-warning-color
+);

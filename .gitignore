@@ -1,1 +1,12 @@
+# Ignore Mac storage files
 .DS_Store
+
+# Ignore generated CSS files
+css/
+
+# Ignore generated doc files
+sassdoc/
+
+# Ignore test HTML/HAML files.
+/index.html
+/index.haml

@@ -1,0 +1,48 @@
+body {
+  @include responsive-prop('max-width', $ss-grid-max-widths);
+
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@for $i from 1 through $ss-column-count {
+  $j: $i - 1;
+
+  @each $breakpoint, $width in $ss-column-widths {
+    $abbreviation: map-get($ss-breakpoint-abbreviations, $breakpoint);
+    $min-max: map-get($ss-breakpoints, $breakpoint);
+    $padding: map-get($ss-column-paddings, $breakpoint);
+
+    $column-width: ($width * $i) + ($j * 2 * $padding);
+    $growth-speed: $i;
+
+    @media (max-width: nth($min-max, 2)) {
+      .gc-#{$abbreviation}-#{$i} {
+        flex: $growth-speed 1 $column-width;
+        margin: $padding $padding ($padding / 2);
+        width: inherit;
+      }
+    }
+
+    @media (min-width: nth($min-max, 2)) {
+      .gc-#{$abbreviation}-#{$i} {
+        flex: $growth-speed 1 $column-width;
+        margin: $padding $padding ($padding / 2);
+        max-width: ($i / $ss-column-count) * 100%;
+        width: $column-width;
+      }
+    }
+
+    @media (min-width: nth($min-max, 1)) and (max-width: nth($min-max, 2)) {
+      div.gc-#{$abbreviation}-#{$i} {
+        flex: $growth-speed 0 $column-width;
+        margin: $padding $padding ($padding / 2);
+        width: $column-width;
+      }
+    }
+  }
+}
