@@ -1,3 +1,9 @@
+/// Creates media query-based rules for a set of properties using the
+/// predefined Starship breakpoints.
+///
+/// @param { String } $property - the CSS property to create rules for
+/// @param { Map } $defined-properties - map of breakpoints to values
+/// @since 1.0.0
 @mixin responsive-prop($property, $defined-properties) {
   @each $breakpoint, $min-max in $ss-breakpoints {
     @media (min-width: nth($min-max, 1)) and (max-width: nth($min-max, 2)) {
