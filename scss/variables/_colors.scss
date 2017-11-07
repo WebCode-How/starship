@@ -69,7 +69,7 @@ $ss-success-color: #35af35;
 /// @since 1.0.0
 $ss-warning-color: #ff9900;
 
-/// Map of colors in the Starsystem color palette.
+/// Map of colors in the Starship color palette.
 ///
 /// @type Map
 /// @since 1.0.0
@@ -83,3 +83,15 @@ $ss-color-map: (
   success: $ss-success-color,
   warning: $ss-warning-color
 );
+
+/// List of colors that need white text on top of them.
+///
+/// @type List
+/// @since 1.0.0
+$ss-dark-colors: danger, dark, info, primary, success, warning;
+
+/// List of colors that need black text on top of them.
+///
+/// @type List
+/// @since 1.0.0
+$ss-light-colors: default, light;
