@@ -29,3 +29,51 @@
   line-height: 28px;
   padding: 20px 30px;
 }
+
+/// Creates styles for a button and ghost button.
+///
+/// @param { String } $suffix - the suffix coming after 'btn-'
+/// @param { Color } $primary-color - the dominant color of the button
+/// @param { Color } $text-color [#fff] - the color of the text on the button
+/// @since 1.0.0
+@mixin ss-button($suffix, $primary-color, $text-color: #fff) {
+  .btn-#{$suffix} {
+    &, &:focus {
+      background: $primary-color;
+      color: $text-color;
+    }
+
+    &:hover {
+      background: darken($primary-color, 7.5%);
+    }
+
+    &:active {
+      background: darken($primary-color, 15%);
+    }
+  }
+
+  .btn-ghost-#{$suffix} {
+    &, &:focus {
+      background: transparent;
+      color: $primary-color;
+    }
+
+    &:hover {
+      background: $primary-color;
+      color: $text-color;
+    }
+
+    &:active {
+      background: darken($primary-color, 7.5%);
+      color: $text-color;
+    }
+  }
+}
+
+@each $name, $color in $ss-color-map {
+  $text-color: #fff;
+
+  @if (index($ss-light-colors, $name)) { $text-color: #000; }
+
+  @include ss-button($name, $color, $text-color);
+}
