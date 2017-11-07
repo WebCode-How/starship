@@ -18,13 +18,13 @@
 ///
 /// @type Map
 /// @since 1.0.0
-$ss-body-max-widths: (
-  desktop-lg: 1250px,
-  desktop-sm: 950px,
-  tablet-hr: 750px,
-  tablet-vt: 650px,
-  phone-lg: 500px,
-  phone-sm: 480px
+$ss-grid-max-widths: (
+  desktop-lg: 1200px,
+  desktop-sm: 1200px,
+  tablet-hr: 960px,
+  tablet-vt: 600px,
+  phone-lg: 480px,
+  phone-sm: 320px
 );
 
 /// How much padding there should be per-column.
@@ -39,33 +39,15 @@ $ss-body-max-widths: (
 /// @type Map
 /// @since 1.0.0
 $ss-column-paddings: (
-  desktop-lg: 50px,
-  desktop-sm: 40px,
-  tablet-hr: 25px,
-  tablet-vt: 20px,
-  phone-lg: 15px,
-  phone-sm: 15px
+  desktop-lg: 25px,
+  desktop-sm: 25px,
+  tablet-hr: 20px,
+  tablet-vt: 16px,
+  phone-lg: 12px,
+  phone-sm: 10px
 );
 
-/// How much padding there should be per-column.
-///
-/// @prop { Pixels } desktop-lg [50px] - Size for desktops > 1800px
-/// @prop { Pixels } desktop-sm [45px] - Size for desktops > 1200px
-/// @prop { Pixels } tablet-hr [25px] - Size for tablets > 960px
-/// @prop { Pixels } tablet-vt [20px] - Size for tablets > 600px
-/// @prop { Pixels } phone-lg [15px] - Size for phones > 480px & <= 600px
-/// @prop { Pixels } phone-sm [15px] - Size for phones <= 480px
-///
-/// @type Map
-/// @since 1.0.0
-$ss-column-paddings: (
-  desktop-lg: 50px,
-  desktop-sm: 40px,
-  tablet-hr: 25px,
-  tablet-vt: 20px,
-  phone-lg: 15px,
-  phone-sm: 15px
-);
+// (((960/8)-20)*2)+(20*2)
 
 /// Number of columns in the grid.
 ///
@@ -73,3 +55,24 @@ $ss-column-paddings: (
 /// @type Number
 /// @since 1.0.0
 $ss-column-count: 8;
+
+/// How much padding there should be per-column.
+///
+/// @prop { Pixels } desktop-lg [50px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [45px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [25px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [20px] - Size for tablets > 600px
+/// @prop { Pixels } phone-lg [15px] - Size for phones > 480px & <= 600px
+/// @prop { Pixels } phone-sm [15px] - Size for phones <= 480px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-column-widths: ();
+
+@each $breakpoint, $padding in $ss-column-paddings {
+  $max-width: map-get($ss-grid-max-widths, $breakpoint);
+  $width: ($max-width / $ss-column-count) - ($padding * 2);
+  $entry: ($breakpoint: $width);
+
+  $ss-column-widths: map-merge($ss-column-widths, $entry);
+}

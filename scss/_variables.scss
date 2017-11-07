@@ -22,6 +22,21 @@ $ss-breakpoints: (
   phone-sm:   (0px, 480px),
 );
 
+/// The abbreviations for Starship's breakpoints.
+///
+/// @access private
+/// @type Map
+/// @since 1.0.0
+$ss-breakpoint-abbreviations: (
+  desktop-lg: 'xl',
+  desktop-sm: 'lg',
+  tablet-hr:  'md',
+  tablet-vt:  'sm',
+  phone-lg:   'xs',
+  phone-sm:   'xx',
+);
+
+
 // Import master variable files; these two files should not rely on each other
 // for population.
 @import 'variables/animation';
