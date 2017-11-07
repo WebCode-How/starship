@@ -1,0 +1,91 @@
+////
+/// Styles for Starship's buttons.
+///
+/// @group Buttons
+/// @author Dean Papastrat
+/// @since 1.0.0
+////
+
+.btn {
+  border-radius: $ss-button-border-radius;
+  cursor: pointer;
+  font-family: $ss-heading-font-family;
+  font-size: $ss-button-font-size;
+  font-weight: 400;
+  letter-spacing: $ss-heading-letter-spacing * 0.75;
+  line-height: $ss-button-line-height;
+  padding: 14px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease;
+  user-select: none;
+
+  &[disabled], &.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+.btn-sm {
+  border-radius: $ss-button-large-border-radius;
+  font-size: $ss-button-small-font-size;
+  letter-spacing: $ss-heading-letter-spacing * 0.5;
+  line-height: $ss-button-small-line-height;
+  padding: 7px 15px;
+}
+
+.btn-lg {
+  border-radius: $ss-button-large-border-radius;
+  font-size: $ss-button-large-font-size;
+  letter-spacing: $ss-heading-letter-spacing;
+  line-height: $ss-button-large-line-height;
+  padding: 20px 30px;
+}
+
+/// Creates styles for a button and ghost button.
+///
+/// @param { String } $suffix - the suffix coming after 'btn-'
+/// @param { Color } $primary-color - the dominant color of the button
+/// @param { Color } $text-color [#fff] - the color of the text on the button
+/// @since 1.0.0
+@mixin ss-button($suffix, $primary-color, $text-color: #fff) {
+  .btn-#{$suffix} {
+    &, &:focus {
+      background: $primary-color;
+      color: $text-color;
+    }
+
+    &:hover {
+      background: darken($primary-color, 7.5%);
+    }
+
+    &:active {
+      background: darken($primary-color, 15%);
+    }
+  }
+
+  .btn-ghost-#{$suffix} {
+    &, &:focus {
+      background: transparent;
+      color: $primary-color;
+    }
+
+    &:hover {
+      background: $primary-color;
+      color: $text-color;
+    }
+
+    &:active {
+      background: darken($primary-color, 7.5%);
+      color: $text-color;
+    }
+  }
+}
+
+@each $name, $color in $ss-color-map {
+  $text-color: #fff;
+
+  @if (index($ss-light-colors, $name)) { $text-color: #000; }
+
+  @include ss-button($name, $color, $text-color);
+}

@@ -1,0 +1,21 @@
+html {
+  background: $ss-background-color;
+}
+
+body {
+  margin: 0 auto;
+}
+
+a.btn, button, input[type='submit'] {
+  &, &:hover, &:focus, &:active {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+input {
+  appearance: none;
+}

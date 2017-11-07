@@ -7,41 +7,22 @@
 		"uuidString": "94CF3A0F-43FB-4DFA-951F-9E37E13B1ACE"
 		}
 	],
-"creatorBuild": "25900",
+"creatorBuild": "26097",
 "files": {
 	"\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/css\/_typography.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_typography-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/css\/reset.css": {
+	"\/css\/starship.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/reset-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/css\/starsystem.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/starsystem-min.css",
+		"oAP": "\/css\/starship-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -52,6 +33,7 @@
 		"oF": 0
 		},
 	"\/index.haml": {
+		"cB": 0,
 		"cDA": 0,
 		"eHT": 0,
 		"ft": 256,
@@ -65,22 +47,32 @@
 		"uUN": 0
 		},
 	"\/index.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -94,11 +86,18 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/sassdoc": {
-		"ft": 65536,
+	"\/scss\/_buttons.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/sassdoc",
-		"oF": 0
+		"oAP": "\/css\/_buttons.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"\/scss\/_grid.scss": {
 		"aP": 1,
@@ -113,7 +112,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/scss\/_starsystem-no-var.scss": {
+	"\/scss\/_reset.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -121,7 +120,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_starsystem-no-var.css",
+		"oAP": "\/css\/_reset.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/_starship-no-var.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_starship-no-var.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -165,20 +177,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/scss\/reset.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/reset.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/scss\/starsystem.scss": {
+	"\/scss\/starship.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -186,7 +185,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/starsystem.css",
+		"oAP": "\/css\/starship.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -302,7 +301,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 529032912,
-	"displayValue": "starsystem",
+	"displayValue": "starship",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-yesBaby"
 	},
@@ -840,6 +839,10 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
@@ -904,9 +907,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -936,6 +939,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -945,14 +952,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -2056,7 +2055,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -2089,6 +2089,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2130,7 +2131,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -2162,13 +2164,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -2177,7 +2179,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -2197,7 +2200,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -2225,7 +2229,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
