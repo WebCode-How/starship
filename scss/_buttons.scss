@@ -1,0 +1,31 @@
+.btn {
+  cursor: pointer;
+  font-family: $ss-heading-font-family;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+  line-height: 21px;
+  padding: 14px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+
+  &[disabled], &.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+.btn-sm {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  line-height: 16px;
+  padding: 7px 15px;
+}
+
+.btn-lg {
+  font-size: 24px;
+  letter-spacing: 4.8px;
+  line-height: 28px;
+  padding: 20px 30px;
+}
