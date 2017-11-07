@@ -1,13 +1,23 @@
+////
+/// Styles for Starship's buttons.
+///
+/// @group Buttons
+/// @author Dean Papastrat
+/// @since 1.0.0
+////
+
 .btn {
+  border-radius: $ss-button-border-radius;
   cursor: pointer;
   font-family: $ss-heading-font-family;
-  font-size: 18px;
+  font-size: $ss-button-font-size;
   font-weight: 400;
-  letter-spacing: 3.6px;
-  line-height: 21px;
+  letter-spacing: $ss-heading-letter-spacing * 0.75;
+  line-height: $ss-button-line-height;
   padding: 14px 24px;
   text-align: center;
   text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease;
   user-select: none;
 
   &[disabled], &.disabled {
@@ -17,16 +27,18 @@
 }
 
 .btn-sm {
-  font-size: 14px;
-  letter-spacing: 2.8px;
-  line-height: 16px;
+  border-radius: $ss-button-large-border-radius;
+  font-size: $ss-button-small-font-size;
+  letter-spacing: $ss-heading-letter-spacing * 0.5;
+  line-height: $ss-button-small-line-height;
   padding: 7px 15px;
 }
 
 .btn-lg {
-  font-size: 24px;
-  letter-spacing: 4.8px;
-  line-height: 28px;
+  border-radius: $ss-button-large-border-radius;
+  font-size: $ss-button-large-font-size;
+  letter-spacing: $ss-heading-letter-spacing;
+  line-height: $ss-button-large-line-height;
   padding: 20px 30px;
 }
 
