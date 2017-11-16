@@ -106,6 +106,35 @@
   }
 }
 
+input.form-control[type='checkbox'], input.form-control[type='radio'] {
+  border: 2px solid $ss-dark-color;
+  display: inline-block;
+  height: 16px;
+  outline-color: transparent;
+  outline-style: solid ;
+  transition: background 0.2s ease, border-color 0.2s ease, outline-color 0.2s ease;
+  vertical-align: middle;
+  width: 16px;
+
+  &:checked {
+    background: $ss-primary-color;
+    border-color: $ss-primary-color;
+    outline-color: $ss-light-color;
+  }
+}
+
+input.form-control[type='checkbox'] {
+  outline-offset: -6px;
+  outline-width: 3px;
+
+}
+
+input.form-control[type='radio'] {
+  border-radius: 16px;
+  outline-offset: -12px;
+  outline-width: 4px;
+}
+
 select.form-control {
   border: none;
   height: 41px;
