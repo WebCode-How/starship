@@ -1,0 +1,279 @@
+////
+/// Styles for Starship's forms.
+///
+/// @group Forms
+/// @author Dean Papastrat
+/// @since 1.0.0
+////
+
+.form {
+  max-width: $ss-max-form-width;
+  min-width: 250px;
+}
+
+.form-sm {
+  max-width: $ss-max-form-sm-width;
+}
+
+.form-lg {
+  max-width: $ss-max-form-lg-width;
+}
+
+.form-field {
+  display: block;
+  padding: 5px 0 15px;
+  width: 100%;
+
+  .form-control {
+    width: 100%;
+  }
+}
+
+.form-field-horizontal {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+
+  .form-label {
+    margin: 15px 8px 8px 0;
+  }
+
+  .form-control {
+    flex: 1 0 auto;
+    width: auto;
+  }
+}
+
+.form-label {
+  color: $ss-dark-color;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 4px 0 8px;
+  text-transform: uppercase;
+}
+
+.form-label-required {
+  font-weight: 600;
+
+  &::after {
+    color: red;
+    content: '*';
+  }
+}
+
+.form-control {
+  background: transparent;
+  border: 1.5px solid $ss-dark-color;
+  border-radius: $ss-form-control-radius;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  transition: border-color 0.2s ease;
+
+  &:focus, &:active {
+    border-color: $ss-primary-color;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: lighten($ss-primary-color, 15%);
+    outline: none;
+  }
+
+  &.validated {
+    &:invalid {
+      &, &:focus, &:active {
+        border-color: $ss-danger-color;
+      }
+
+      &:hover {
+        border-color: lighten($ss-danger-color, 7.5%);
+      }
+    }
+
+    &:valid {
+      &, &:focus, &:active {
+        border-color: $ss-success-color;
+      }
+
+      &:hover {
+        border-color: lighten($ss-success-color, 7.5%);
+      }
+    }
+  }
+
+  &[disabled], &[readonly] {
+    &:focus, &:active {
+      border-color: $ss-dark-color;
+      outline: none;
+    }
+
+    &:hover {
+      border-color: lighten($ss-dark-color, 20%);
+      outline: none;
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    user-select: none;
+  }
+
+  &[readonly] {
+    cursor: text;
+    user-select: text;
+  }
+}
+
+input.form-control[type='checkbox'], input.form-control[type='radio'] {
+  border: 2px solid $ss-dark-color;
+  display: inline-block;
+  height: 16px;
+  outline-color: transparent;
+  outline-style: solid ;
+  transition: background 0.2s ease, border-color 0.2s ease, outline-color 0.2s ease;
+  vertical-align: middle;
+  width: 16px;
+
+  &:hover {
+    outline-color: lighten($ss-dark-color, 20%);
+  }
+
+  &:checked {
+    background: $ss-primary-color;
+    border-color: $ss-primary-color;
+    outline-color: $ss-light-color;
+  }
+
+  &[disabled] {
+    border-color: lighten($ss-dark-color, 20%);
+    outline-style: solid;
+
+    &:hover {
+      outline-color: transparent;
+    }
+
+    &:checked, &:checked:hover {
+      background: lighten($ss-dark-color, 20%);
+      border-color: lighten($ss-dark-color, 20%);
+      outline-color: $ss-light-color;
+    }
+  }
+}
+
+input.form-control[type='checkbox'] {
+  &, &[disabled] {
+    outline-offset: -8px;
+    outline-width: 3px;
+  }
+}
+
+input.form-control[type='radio'] {
+  border-radius: 16px;
+
+  &, &[disabled] {
+    outline-offset: -12px;
+    outline-width: 4px;
+  }
+}
+
+select.form-control {
+  border: none;
+  height: 41px;
+  margin: 2px;
+  outline: 2px solid $ss-dark-color;
+  outline-offset: 0;
+  transition: outline 0.2s ease;
+
+  &:focus, &:active {
+    outline: 2px solid $ss-primary-color;
+  }
+
+  &:hover {
+    outline: 2px solid lighten($ss-primary-color, 15%);
+  }
+
+  &.validated {
+    &:invalid {
+      &, &:focus, &:active {
+        outline: 2px solid $ss-danger-color;
+      }
+
+      &:hover {
+        outline: 2px solid lighten($ss-danger-color, 7.5%);
+      }
+    }
+
+    &:valid {
+      &, &:focus, &:active {
+        outline: 2px solid $ss-success-color;
+      }
+
+      &:hover {
+        outline: 2px solid lighten($ss-success-color, 7.5%);
+      }
+    }
+  }
+
+  &[disabled] {
+    &:focus, &:active {
+      outline: 2px solid $ss-dark-color;
+    }
+
+    &:hover {
+      outline: 2px solid lighten($ss-dark-color, 20%);
+    }
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-flow: row nowrap;
+  widows: 100%;
+
+  .form-control {
+    flex-grow: 1;
+
+    & + .input-btn, .input-icon {
+      margin-left: -2px;
+    }
+  }
+}
+
+a.btn.input-btn, button.btn.input-btn, .input-icon {
+  border-radius: 0;
+  box-sizing: border-box;
+  height: 41px;
+  margin-right: -2px;
+
+  & + .form-control {
+    border-left: 2px solid transparent;
+  }
+}
+
+a.btn.input-btn, button.btn.input-btn {
+  border-width: 2px;
+  font-size: 14px;
+  padding: 5px 10px;
+
+  &.input-icon {
+    font-size: 18px;
+    padding: 0;
+  }
+}
+
+.input-icon {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  padding: 0;
+  width: 41px;
+
+  &:not(.btn) {
+    border: 2px solid $ss-dark-color;
+  }
+}
