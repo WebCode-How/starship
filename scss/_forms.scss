@@ -30,12 +30,17 @@
 }
 
 .form-field-horizontal {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
 
   .form-label {
-    margin-right: 8px;
+    margin: 15px 8px 8px 0;
+  }
+
+  .form-control {
+    flex: 1 0 auto;
+    width: auto;
   }
 }
 
@@ -61,6 +66,7 @@
 .form-control {
   background: transparent;
   border: 1.5px solid $ss-dark-color;
+  border-radius: $ss-form-control-radius;
   box-sizing: border-box;
   display: block;
   font-size: 16px;
@@ -95,6 +101,45 @@
 
       &:hover {
         border-color: lighten($ss-success-color, 7.5%);
+      }
+    }
+  }
+}
+
+select.form-control {
+  border: none;
+  height: 41px;
+  margin: 2px;
+  outline: 2px solid $ss-dark-color;
+  outline-offset: 0;
+  transition: outline 0.2s ease;
+
+  &:focus, &:active {
+    outline: 2px solid $ss-primary-color;
+  }
+
+  &:hover {
+    outline: 2px solid lighten($ss-primary-color, 15%);
+  }
+
+  &.validated {
+    &:invalid {
+      &, &:focus, &:active {
+        outline: 2px solid $ss-danger-color;
+      }
+
+      &:hover {
+        outline: 2px solid lighten($ss-danger-color, 7.5%);
+      }
+    }
+
+    &:valid {
+      &, &:focus, &:active {
+        outline: 2px solid $ss-success-color;
+      }
+
+      &:hover {
+        outline: 2px solid lighten($ss-success-color, 7.5%);
       }
     }
   }
