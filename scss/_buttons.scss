@@ -9,6 +9,7 @@
 .btn {
   border-radius: $ss-button-border-radius;
   cursor: pointer;
+  display: inline-block;
   font-family: $ss-heading-font-family;
   font-size: $ss-button-font-size;
   font-weight: 400;
@@ -17,7 +18,7 @@
   padding: 14px 24px;
   text-align: center;
   text-transform: uppercase;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   user-select: none;
 
   &[disabled], &.disabled {
@@ -49,35 +50,42 @@
 /// @param { Color } $text-color [#fff] - the color of the text on the button
 /// @since 1.0.0
 @mixin ss-button($suffix, $primary-color, $text-color: #fff) {
-  .btn-#{$suffix} {
-    &, &:focus {
-      background: $primary-color;
-      color: $text-color;
+  a.btn, button {
+    &.btn-#{$suffix} {
+      &, &:focus {
+        background: $primary-color;
+        color: $text-color;
+      }
+
+      &:hover {
+        background: darken($primary-color, 7.5%);
+      }
+
+      &:active {
+        background: darken($primary-color, 15%);
+      }
     }
 
-    &:hover {
-      background: darken($primary-color, 7.5%);
-    }
+    &.btn-ghost-#{$suffix} {
+      border: 1px solid $primary-color;
 
-    &:active {
-      background: darken($primary-color, 15%);
-    }
-  }
+      &, &:focus {
+        background: transparent;
+        border-color: $primary-color;
+        color: $primary-color;
+      }
 
-  .btn-ghost-#{$suffix} {
-    &, &:focus {
-      background: transparent;
-      color: $primary-color;
-    }
+      &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: $text-color;
+      }
 
-    &:hover {
-      background: $primary-color;
-      color: $text-color;
-    }
-
-    &:active {
-      background: darken($primary-color, 7.5%);
-      color: $text-color;
+      &:active {
+        background: darken($primary-color, 7.5%);
+        background: darken($primary-color, 7.5%);
+        color: $text-color;
+      }
     }
   }
 }
