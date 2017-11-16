@@ -104,6 +104,28 @@
       }
     }
   }
+
+  &[disabled], &[readonly] {
+    &:focus, &:active {
+      border-color: $ss-dark-color;
+      outline: none;
+    }
+
+    &:hover {
+      border-color: lighten($ss-dark-color, 20%);
+      outline: none;
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    user-select: none;
+  }
+
+  &[readonly] {
+    cursor: text;
+    user-select: text;
+  }
 }
 
 input.form-control[type='checkbox'], input.form-control[type='radio'] {
@@ -116,23 +138,46 @@ input.form-control[type='checkbox'], input.form-control[type='radio'] {
   vertical-align: middle;
   width: 16px;
 
+  &:hover {
+    outline-color: lighten($ss-dark-color, 20%);
+  }
+
   &:checked {
     background: $ss-primary-color;
     border-color: $ss-primary-color;
     outline-color: $ss-light-color;
   }
+
+  &[disabled] {
+    border-color: lighten($ss-dark-color, 20%);
+    outline-style: solid;
+
+    &:hover {
+      outline-color: transparent;
+    }
+
+    &:checked, &:checked:hover {
+      background: lighten($ss-dark-color, 20%);
+      border-color: lighten($ss-dark-color, 20%);
+      outline-color: $ss-light-color;
+    }
+  }
 }
 
 input.form-control[type='checkbox'] {
-  outline-offset: -6px;
-  outline-width: 3px;
-
+  &, &[disabled] {
+    outline-offset: -8px;
+    outline-width: 3px;
+  }
 }
 
 input.form-control[type='radio'] {
   border-radius: 16px;
-  outline-offset: -12px;
-  outline-width: 4px;
+
+  &, &[disabled] {
+    outline-offset: -12px;
+    outline-width: 4px;
+  }
 }
 
 select.form-control {
@@ -170,6 +215,16 @@ select.form-control {
       &:hover {
         outline: 2px solid lighten($ss-success-color, 7.5%);
       }
+    }
+  }
+
+  &[disabled] {
+    &:focus, &:active {
+      outline: 2px solid $ss-dark-color;
+    }
+
+    &:hover {
+      outline: 2px solid lighten($ss-dark-color, 20%);
     }
   }
 }
