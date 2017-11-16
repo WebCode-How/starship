@@ -22,6 +22,11 @@
 .form-field {
   display: block;
   padding: 5px 0 15px;
+  width: 100%;
+
+  .form-control {
+    width: 100%;
+  }
 }
 
 .form-field-horizontal {
@@ -95,6 +100,51 @@
   }
 }
 
-.form-control-full-width {
-  width: 100%;
+.input-group {
+  display: flex;
+  flex-flow: row nowrap;
+  widows: 100%;
+
+  .form-control {
+    flex-grow: 1;
+
+    & + .input-btn, .input-icon {
+      margin-left: -2px;
+    }
+  }
+}
+
+a.btn.input-btn, button.btn.input-btn, .input-icon {
+  border-radius: 0;
+  box-sizing: border-box;
+  height: 41px;
+  margin-right: -2px;
+
+  & + .form-control {
+    border-left: 2px solid transparent;
+  }
+}
+
+a.btn.input-btn, button.btn.input-btn {
+  border-width: 2px;
+  font-size: 14px;
+  padding: 5px 10px;
+
+  &.input-icon {
+    font-size: 18px;
+    padding: 0;
+  }
+}
+
+.input-icon {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  padding: 0;
+  width: 41px;
+
+  &:not(.btn) {
+    border: 2px solid $ss-dark-color;
+  }
 }
