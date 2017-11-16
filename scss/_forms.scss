@@ -1,0 +1,100 @@
+////
+/// Styles for Starship's forms.
+///
+/// @group Forms
+/// @author Dean Papastrat
+/// @since 1.0.0
+////
+
+.form {
+  max-width: $ss-max-form-width;
+  min-width: 250px;
+}
+
+.form-sm {
+  max-width: $ss-max-form-sm-width;
+}
+
+.form-lg {
+  max-width: $ss-max-form-lg-width;
+}
+
+.form-field {
+  display: block;
+  padding: 5px 0 15px;
+}
+
+.form-field-horizontal {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+
+  .form-label {
+    margin-right: 8px;
+  }
+}
+
+.form-label {
+  color: $ss-dark-color;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 4px 0 8px;
+  text-transform: uppercase;
+}
+
+.form-label-required {
+  font-weight: 600;
+
+  &::after {
+    color: red;
+    content: '*';
+  }
+}
+
+.form-control {
+  background: transparent;
+  border: 1.5px solid $ss-dark-color;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  transition: border-color 0.2s ease;
+
+  &:focus, &:active {
+    border-color: $ss-primary-color;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: lighten($ss-primary-color, 15%);
+    outline: none;
+  }
+
+  &.validated {
+    &:invalid {
+      &, &:focus, &:active {
+        border-color: $ss-danger-color;
+      }
+
+      &:hover {
+        border-color: lighten($ss-danger-color, 7.5%);
+      }
+    }
+
+    &:valid {
+      &, &:focus, &:active {
+        border-color: $ss-success-color;
+      }
+
+      &:hover {
+        border-color: lighten($ss-success-color, 7.5%);
+      }
+    }
+  }
+}
+
+.form-control-full-width {
+  width: 100%;
+}
