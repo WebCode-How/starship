@@ -1,0 +1,8 @@
+.dialog {
+  @include responsive-prop('padding', $ss-dialog-padding-sizes);
+
+  border: none;
+  box-sizing: border-box;
+  max-width: 750px;
+  width: 90%;
+}
