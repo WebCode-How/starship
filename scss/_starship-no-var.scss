@@ -7,6 +7,8 @@
 /// @since 1.0.0
 ////
 
+// Core Imports
+
 @import 'utilities';
 @import 'reset';
 @import 'grid';
@@ -15,3 +17,7 @@
 @import 'forms';
 @import 'dialogs';
 @import 'cards';
+
+// Component Imports
+
+@import 'components/repository';
