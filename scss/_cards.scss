@@ -15,3 +15,10 @@
     @include responsive-prop('line-height', $ss-paragraph-font-sizes, 1.5);
   }
 }
+
+.card-divider {
+  background-color: $ss-dark-color;
+  height: 1px;
+  margin: 20px -25px;
+  width: calc(100% + 50px);
+}
