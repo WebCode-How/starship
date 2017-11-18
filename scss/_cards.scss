@@ -1,0 +1,17 @@
+.card {
+  background-color: $ss-card-background-color;
+  box-sizing: border-box;
+  display: block;
+  padding: 25px;
+
+  h1, h2, h3, h4 {
+    margin-top: 0;
+  }
+}
+
+.card-secondary p {
+  @media (min-width: nth(map-get($ss-breakpoints, 'phone-lg'), 1)) {
+    @include responsive-prop('font-size', $ss-paragraph-font-sizes, 0.8);
+    @include responsive-prop('line-height', $ss-paragraph-font-sizes, 1.5);
+  }
+}
