@@ -3,7 +3,7 @@ body {
 
   width: 100%;
 
-  @media (max-width: map-get($ss-breakpoints, 'phone-sm')) {
+  @media (max-width: nth(map-get($ss-breakpoints, 'phone-sm'), 1)) {
     max-width: 100%;
   }
 }
