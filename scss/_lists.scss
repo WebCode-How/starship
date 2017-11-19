@@ -1,0 +1,22 @@
+ul.list {
+  list-style: none;
+  padding: 0 0 0 20px;
+
+  li {
+    line-height: 18px;
+    margin-top: 15px;
+
+    &:before {
+      color: #b1b1b1;
+      content: '\232A ';
+      display: inline-block;
+      font-stretch: expanded;
+      font-size: 20px;
+      margin: 0 0 0 -20px;
+      vertical-align: middle;
+      text-align: right;
+      width: 20px;
+      transform: scale(1.5,0.9);
+    }
+  }
+}

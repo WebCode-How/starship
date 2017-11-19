@@ -10,7 +10,7 @@ html, p {
 
 h1 {
   @include responsive-prop('font-size', $ss-h1-font-sizes);
-  @include responsive-prop('line-height', $ss-h1-font-sizes, 1.75);
+  @include responsive-prop('line-height', $ss-h1-font-sizes);
   @include responsive-prop('margin', $ss-h1-margin-sizes);
 
   font-weight: 600;
@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   @include responsive-prop('font-size', $ss-h2-font-sizes);
-  @include responsive-prop('line-height', $ss-h2-font-sizes, 1.75);
+  @include responsive-prop('line-height', $ss-h2-font-sizes);
   @include responsive-prop('margin', $ss-h2-margin-sizes);
 
   font-weight: 400;
@@ -30,7 +30,7 @@ h2 {
 
 h3 {
   @include responsive-prop('font-size', $ss-h3-font-sizes);
-  @include responsive-prop('line-height', $ss-h3-font-sizes, 1.75);
+  @include responsive-prop('line-height', $ss-h3-font-sizes);
   @include responsive-prop('margin', $ss-h3-margin-sizes);
 
   font-weight: 400;
@@ -40,7 +40,7 @@ h3 {
 
 h4 {
   @include responsive-prop('font-size', $ss-h4-font-sizes);
-  @include responsive-prop('line-height', $ss-h4-font-sizes, 1.75);
+  @include responsive-prop('line-height', $ss-h4-font-sizes);
   @include responsive-prop('margin', $ss-h4-margin-sizes);
 
   font-weight: 400;
