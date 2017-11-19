@@ -60,6 +60,20 @@ p {
   font-weight: 400;
 }
 
+a {
+  color: $ss-primary-color;
+  text-decoration: none;
+  transition: color 0.25s ease;
+
+  &:hover, &:active, &:focus {
+    color: lighten($ss-primary-color, 20%);
+  }
+
+  &:visited {
+    color: darken($ss-primary-color, 20%);
+  }
+}
+
 // Text Color Utility
 
 @each $color-name, $color in $ss-color-map {
