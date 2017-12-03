@@ -1,0 +1,40 @@
+ul.list {
+  list-style: none;
+  padding: 0 0 0 20px;
+
+  li {
+    line-height: 18px;
+    margin-top: 15px;
+
+    &:before {
+      color: #b1b1b1;
+      content: '\232A ';
+      display: inline-block;
+      font-stretch: expanded;
+      font-size: 20px;
+      margin: 0 0 0 -28px;
+      vertical-align: middle;
+      text-align: right;
+      width: 20px;
+      transform: scale(1.5,0.9);
+    }
+  }
+}
+
+ul.icon-list {
+  list-style: none;
+  padding: 0 0 0 32px;
+
+  li {
+    line-height: 18px;
+    margin-top: 15px;
+
+    i {
+      font-size: 24px;
+      height: 28px;
+      margin-left: -32px;
+      vertical-align: middle;
+      width: 32px;
+    }
+  }
+}

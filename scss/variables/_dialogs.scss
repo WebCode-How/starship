@@ -6,3 +6,23 @@
 /// @author Dean Papastrat
 /// @since 1.0.0
 ////
+
+/// Padding sizes for dialog elements.
+///
+/// @prop { Pixels } desktop-lg [30px 40px] - Size for desktops > 1800px
+/// @prop { Pixels } desktop-sm [28px 36px] - Size for desktops > 1200px
+/// @prop { Pixels } tablet-hr [24px 32px] - Size for tablets > 960px
+/// @prop { Pixels } tablet-vt [20px 28px] - Size for tablets > 600px
+/// @prop { Pixels } phone-lg [16px 24px] - Size for phones > 480px & <= 600px
+/// @prop { Pixels } phone-sm [15px 20px] - Size for phones <= 480px
+///
+/// @type Map
+/// @since 1.0.0
+$ss-dialog-padding-sizes: (
+  desktop-lg: 30px 40px,
+  desktop-sm: 28px 36px,
+  tablet-hr: 24px 32px,
+  tablet-vt: 20px 28px,
+  phone-lg: 16px 24px,
+  phone-sm: 15px 20px
+);

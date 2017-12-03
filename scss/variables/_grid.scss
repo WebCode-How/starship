@@ -47,14 +47,12 @@ $ss-column-paddings: (
   phone-sm: 10px
 );
 
-// (((960/8)-20)*2)+(20*2)
-
 /// Number of columns in the grid.
 ///
-/// @private
+/// @access private
 /// @type Number
 /// @since 1.0.0
-$ss-column-count: 8;
+$ss-column-count: 16;
 
 /// How much padding there should be per-column.
 ///

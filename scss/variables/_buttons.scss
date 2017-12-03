@@ -6,3 +6,107 @@
 /// @author Dean Papastrat
 /// @since 1.0.0
 ////
+
+/// Border radius sizes for buttons.
+///
+/// @prop { Pixels } sm [12.5px] - Size for extra small buttons
+/// @prop { Pixels } sm [14px] - Size for small buttons
+/// @prop { Pixels } md [25px] - Size for normal buttons
+/// @prop { Pixels } lg [32px] - Size for large buttons
+///
+/// @type Map
+/// @since 1.0.0
+$ss-button-border-radiuses: (
+  xs: 14px,
+  sm: 14px,
+  md: 25px,
+  lg: 32px
+);
+
+/// Border radius size for normal buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-border-radius: map-get($ss-button-border-radiuses, 'md');
+
+/// Border radius size for small buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-extra-small-border-radius: map-get($ss-button-border-radiuses, 'xs');
+
+/// Border radius size for small buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-small-border-radius: map-get($ss-button-border-radiuses, 'sm');
+
+/// Border radius size for large buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-large-border-radius: map-get($ss-button-border-radiuses, 'lg');
+
+/// Font sizes for buttons.
+///
+/// @prop { Pixels } sm [14px] - Size for small buttons
+/// @prop { Pixels } md [25px] - Size for normal buttons
+/// @prop { Pixels } lg [32px] - Size for large buttons
+///
+/// @type Map
+/// @since 1.0.0
+$ss-button-font-sizes: (
+  xs: 12px,
+  sm: 14px,
+  md: 18px,
+  lg: 24px
+);
+
+/// Calculates the line height for a button given its size abbreviation.
+///
+/// @param { String } $size - abbreviation of the button size (sm / md / lg)
+/// @return { Pixels } what the line height should be for the given button
+///
+/// @access private
+/// @since 1.0.0
+@function ss-button-line-height($size) {
+  $font-size: map-get($ss-button-font-sizes, $size);
+
+  @return $font-size + floor($font-size / 6);
+}
+
+/// Font size for normal buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-font-size: map-get($ss-button-font-sizes, 'md');
+$ss-button-line-height: ss-button-line-height('md');
+
+/// Font size for extra small buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-extra-small-font-size: map-get($ss-button-font-sizes, 'xs');
+$ss-button-extra-small-line-height: ss-button-line-height('xs');
+
+/// Font size for small buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-small-font-size: map-get($ss-button-font-sizes, 'sm');
+$ss-button-small-line-height: ss-button-line-height('sm');
+
+/// Font size for large buttons.
+///
+/// @access private
+/// @type Pixels
+/// @since 1.0.0
+$ss-button-large-font-size: map-get($ss-button-font-sizes, 'lg');
+$ss-button-large-line-height: ss-button-line-height('lg');
