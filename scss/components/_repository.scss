@@ -21,12 +21,16 @@
   flex: 1 0 calc(100% - 52px);
   font-family: $ss-heading-font-family;
   margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .repository-owner {
   color: #9b9b9b;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &::after {
     content: '/';
@@ -36,6 +40,8 @@
 .repository-name {
   font-size: 28px;
   line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .repository-actions {

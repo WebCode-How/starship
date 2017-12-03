@@ -68,10 +68,6 @@ a {
   &:hover, &:active, &:focus {
     color: lighten($ss-primary-color, 20%);
   }
-
-  &:visited {
-    color: darken($ss-primary-color, 20%);
-  }
 }
 
 // Text Color Utility
