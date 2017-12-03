@@ -7,7 +7,7 @@
 		"uuidString": "94CF3A0F-43FB-4DFA-951F-9E37E13B1ACE"
 		}
 	],
-"creatorBuild": "26097",
+"creatorBuild": "26148",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -86,6 +86,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/sassdoc": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/sassdoc",
+		"oF": 0
+		},
 	"\/scss\/_buttons.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -99,6 +105,45 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/scss\/_cards.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_cards.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/_dialogs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_dialogs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/_forms.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/scss\/_grid.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -108,6 +153,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/_lists.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_lists.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -173,6 +231,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/components\/_link_item.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_link_item.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/components\/_repository.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_repository.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/components\/_tabs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_tabs.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

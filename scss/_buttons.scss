@@ -27,8 +27,16 @@
   }
 }
 
+.btn-xs {
+  border-radius: $ss-button-extra-small-border-radius;
+  font-size: $ss-button-extra-small-font-size;
+  letter-spacing: $ss-heading-letter-spacing * 0.25;
+  line-height: $ss-button-extra-small-line-height;
+  padding: 7px 15px;
+}
+
 .btn-sm {
-  border-radius: $ss-button-large-border-radius;
+  border-radius: $ss-button-small-border-radius;
   font-size: $ss-button-small-font-size;
   letter-spacing: $ss-heading-letter-spacing * 0.5;
   line-height: $ss-button-small-line-height;

@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: $ss-heading-font-family;
 }
 
@@ -38,15 +38,36 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  @include responsive-prop('font-size', $ss-h4-font-sizes);
+  @include responsive-prop('line-height', $ss-h4-font-sizes);
+  @include responsive-prop('margin', $ss-h4-margin-sizes);
+
+  font-weight: 400;
+  letter-spacing: $ss-h3-letter-spacing;
+  text-transform: uppercase;
+}
+
+
 html, p {
   @include responsive-prop('font-size', $ss-paragraph-font-sizes);
-  @include responsive-prop('line-height', $ss-paragraph-font-sizes);
+  @include responsive-prop('line-height', $ss-paragraph-font-sizes, 1.75);
 }
 
 p {
   @include responsive-prop('margin', $ss-paragraph-margin-sizes);
 
   font-weight: 400;
+}
+
+a {
+  color: $ss-primary-color;
+  text-decoration: none;
+  transition: color 0.25s ease;
+
+  &:hover, &:active, &:focus {
+    color: lighten($ss-primary-color, 20%);
+  }
 }
 
 // Text Color Utility
