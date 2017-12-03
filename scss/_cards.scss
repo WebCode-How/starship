@@ -8,6 +8,10 @@
   h1, h2, h3, h4 {
     margin-top: 0;
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .card-secondary p {
@@ -22,4 +26,26 @@
   height: 1px;
   margin: 20px -25px;
   width: calc(100% + 50px);
+}
+
+.featured-card-image {
+  margin: -25px -25px 15px;
+  width: calc(100% + 50px);
+}
+
+.card-imaged {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 250px;
+  justify-content: flex-end;
+}
+
+.card-imaged-content {
+  background-color: rgba($ss-dark-color, 0.5);
+  color: $ss-light-color;
+  margin: 0 -25px -25px;
+  padding: 25px;
+  width: 100%;
 }

@@ -1,0 +1,37 @@
+.card-tabs {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: $ss-heading-font-family;
+  justify-content: flex-start;
+  margin: -25px -25px 10px;
+}
+
+.card-tab {
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  padding: 20px 25px 7.5px;
+  text-align: center;
+  user-select: none;
+
+  &::before {
+    background: $ss-dark-color;
+    content: '';
+    display: block;
+    height: 8px;
+    margin: -20px -25px 0;
+    transition: background 0.4s ease;
+    width: calc(100% + 50px);
+  }
+
+  &:hover::before {
+    background: lighten($ss-primary-color, 10%);
+  }
+
+  &.card-tab-active::before {
+    background: $ss-primary-color;
+  }
+}

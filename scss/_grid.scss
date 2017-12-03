@@ -27,7 +27,7 @@ body {
     @media (min-width: nth($min-max, 1)) and (max-width: nth($min-max, 2)) {
       div.gc-#{$abbreviation}-#{$i} {
         flex: $growth-speed 0 $column-width;
-        margin: $padding $padding ($padding / 2);
+        margin: $padding $padding;
         width: $column-width;
       }
     }
