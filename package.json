@@ -1,8 +1,16 @@
 {
   "title": "Starship",
-  "name": "starship",
+  "name": "@webcode-how/starship",
   "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/webcode-how/starship",
-  "description": "An interface framework for building responsive, card-based layouts."
+  "description": "An interface framework for building responsive, card-based layouts.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://deanpapastrat@github.com/WebCode-How/starsystem.git"
+  },
+  "author": "Dean Papastrat",
+  "bugs": {
+    "url": "https://github.com/WebCode-How/starsystem/issues"
+  }
 }
